@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+<link rel="stylesheet" href="file:///d%3A/Common/Markdown/markdown.css" type="text/css">
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///d%3A/Common/Markdown/markdown.css" type="text/css">
+</head>
+<body>
+<h1 id="gis%E7%94%A8%E8%AA%9E%E9%9B%86">GIS用語集</h1>
+<h2 id="qgis">QGIS</h2>
+<p>https://www.qgis.org/ja/site/</p>
+<p>シェープファイルを閲覧，加工できるGISフリーソフトである．</p>
+<h2 id="osm">OSM</h2>
+<p>https://www.openstreetmap.org/<br>
+https://wiki.openstreetmap.org/wiki/Main_Page</p>
+<p>OSM(OpenStreetMap)とはフリーで提供されている地図のことである．<br>
+OSMのデータはフリーで取得することができる．</p>
+<h2 id="%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%97%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">シェープファイル</h2>
+<p>https://www.esrij.com/gis-guide/esri-dataformat/shapefile/<br>
+https://www.esrij.com/cgi-bin/wp/wp-content/uploads/documents/shapefile_j.pdf</p>
+<p>図形情報や属性情報がまとまったファイルを指す．<br>
+ESRI社が提唱したフォーマットでGISで標準となっている．<br>
+シェープファイルには少なくとも下記ファイルが含まれる．</p>
+<table>
+<thead>
+<tr>
+<th>拡張子</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.shp</td>
+<td>図形情報が格納されている．</td>
+</tr>
+<tr>
+<td>.dbf</td>
+<td>属性情報が格納されている．</td>
+</tr>
+<tr>
+<td>.shx</td>
+<td>図形と属性の対応関係が格納されている．</td>
+</tr>
+</tbody>
+</table>
+<p>現行の制約では，1つのシェープファイルには1つのジオメトリしか格納することができないとなっている．</p>
+<h2 id="%E3%83%99%E3%83%BC%E3%82%B9%E3%83%9E%E3%83%83%E3%83%97">ベースマップ</h2>
+<p>背景地図のことを指す．<br>
+ESRIから無償のベースマップが公開されている．</p>
+<table>
+<thead>
+<tr>
+<th>地図</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>白地図</td>
+<td>https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer</td>
+</tr>
+<tr>
+<td>衛星画像</td>
+<td>https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer</td>
+</tr>
+<tr>
+<td>道路地図</td>
+<td>https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer</td>
+</tr>
+<tr>
+<td>起伏図</td>
+<td>https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer</td>
+</tr>
+<tr>
+<td>地形図</td>
+<td>https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%A9%BA%E9%96%93%E5%8F%82%E7%85%A7%E7%B3%BB">空間参照系</h2>
+<h2 id="%E3%83%95%E3%82%A3%E3%83%BC%E3%83%81%E3%83%A3">フィーチャ</h2>
+<p>現実世界の物(標識，道路，建物等)をベクターデータ化したもの．<br>
+地物ともいう．<br>
+ポイント，ライン，ポリゴンの3種類存在する．</p>
+<h2 id="wktwell-known-text">WKT(Well-known text)</h2>
+<p>フィーチャをテキスト形式で表現するフォーマット．</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Exanple</th>
+<th>Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Point</td>
+<td>POINT (139.621002802592 35.7119406409266)</td>
+<td><img src="point.png" alt="point.png"></td>
+</tr>
+<tr>
+<td>Line</td>
+<td>LINESTRING (139.548599326586 35.7376245768467,139.607394853493 35.7118940200852,139.657922259429 35.7230822398456)</td>
+<td><img src="line.png" alt="line.png"></td>
+</tr>
+<tr>
+<td>Polygon</td>
+<td>POLYGON ((139.540790545669 35.7797450710378,139.600504752684 35.7756458256734,139.599126732522 35.741352953488,139.552733387072 35.7424714324349,139.540790545669 35.7797450710378))</td>
+<td><img src="polygon.png" alt="polygon.png"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="wkt%E3%81%AE%E5%AE%9F%E7%94%A8%E4%BE%8B">WKTの実用例</h3>
+<p>SQL Serverでの実用例を示す．<br>
+例えば以下のようなフィーチャを格納するテーブルがあったとする．</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> SAMPLE_FEATURE(SHAPE geometry <span class="hljs-literal">NULL</span>);
+</div></code></pre>
+<p>以下のようにWKTからgeometryインスタンスを生成することでフィーチャを登録することができる．</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SAMPLE_FEATURE(SHAPE) <span class="hljs-keyword">VALUES</span>(geometry::STPointFromText(<span class="hljs-string">'POINT(135 35)'</span>, <span class="hljs-number">4326</span>));
+</div></code></pre>
+<p>DBを確認すると確かにフィーチャが登録されていることがわかる．</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> SHAPE <span class="hljs-keyword">FROM</span> SAMPLE_FEATURE;
+</div></code></pre>
+<table>
+<thead>
+<tr>
+<th>SHAPE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0xE6100000010C0000000000E060400000000000804140</td>
+</tr>
+</tbody>
+</table>
+<p>WKT形式でフィーチャを取得することもできる．</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> SHAPE.STAsText() <span class="hljs-keyword">FROM</span> SAMPLE_FEATURE;
+</div></code></pre>
+<table>
+<thead>
+<tr>
+<th>SHAPE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POINT(135 35)</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
