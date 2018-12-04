@@ -1,10 +1,10 @@
-# GIS用語集
+# 用語解説
 
 ## QGIS
 
 https://www.qgis.org/ja/site/
 
-シェープファイルを閲覧，加工できるGISフリーソフトである．
+シェープファイルを閲覧，加工できるGISフリーソフト．
 
 
 
@@ -14,8 +14,8 @@ https://www.qgis.org/ja/site/
 https://www.openstreetmap.org/
 https://wiki.openstreetmap.org/wiki/Main_Page
 
-OSM(OpenStreetMap)とはフリーで提供されている地図のことである．
-OSMのデータはフリーで取得することができる．
+OSM(OpenStreetMap)は地理情報をフリーで利用出来るように立ち上げられたプロジェクトである．
+OSMから地図やシェープファイルがフリーで提供されている．
 
 
 
@@ -34,7 +34,7 @@ ESRI社が提唱したフォーマットでGISで標準となっている．
 |.dbf|属性情報が格納されている．|
 |.shx|図形と属性の対応関係が格納されている．|
 
-現行の制約では，1つのシェープファイルには1つのジオメトリしか格納することができないとなっている．
+現行の制約では，「1つのシェープファイルには1つのジオメトリしか格納することができない」となっている．
 
 
 ## ベースマップ
@@ -50,9 +50,61 @@ ESRIから無償のベースマップが公開されている．
 | 起伏図 | https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer |
 | 地形図 | https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer |
 
+ベースマップにレイヤを重ねることで任意の情報と地理情報を組み合わせて分析することができる．
+
 
 
 ## 空間参照系
+
+https://docs.qgis.org/2.14/ja/docs/gentle_gis_introduction/coordinate_reference_systems.html
+
+CRS(Coordinate Reference System)ともいう．
+地球の実際の場所を二次元でどのように表現するかを決定する．
+主に投影座標系と地理座標系に分類される．
+
+### 投影座標系
+
+https://www.esrij.com/gis-guide/coordinate-and-spatial/coordinate-system/
+
+3次元の地球を2次元の平面に投影してXY座標で表現する座標系を投影座標系という．
+地図アプリのデファクトスタンダードとして使用されている投影座標系はWebメルカトルである．
+
+#### Webメルカトル
+
+Webメルカトルは昔EPSG:900913が使われていたが現在はEPSG:3857を使う．
+Webメルカトルでは地球に円筒をかぶせて，2次元の平面に投影する．
+
+![mercator.png](mercator.png)
+
+経線はそれぞれ等間隔，平行となる．
+緯線は平行だが，経度が赤道から離れるほど間隔が大きくなる．
+
+![3857_grid.png](3857_grid.png)
+
+赤道と本初子午線の交点を中心とし，中心から何m離れているかを座標で表現する．
+
+![webmercator_point.png](webmercator_point.png)
+
+
+
+### 地理座標系
+
+https://www.ibm.com/support/knowledgecenter/ja/SS6NHC/com.ibm.db2.luw.spatial.topics.doc/doc/csb3022a.html
+
+EPSGコードは4326．
+緯度，経度，高度を用いて表現する．
+赤道と本初子午線の交点を中心とし，座標の単位は角度で表す．
+
+![4326.png](4326.png)
+
+
+### EPSG
+
+http://www.epsg.org/
+
+EUROPEAN Petroleum Survey Group．
+空間参照系や座標変換の定義をまとめている．
+
 
 
 ## フィーチャ
