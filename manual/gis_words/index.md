@@ -93,6 +93,9 @@ https://www.ibm.com/support/knowledgecenter/ja/SS6NHC/com.ibm.db2.luw.spatial.to
 
 EPSGコードは4326．
 緯度，経度，高度を用いて表現する．
+
+![_4326.png](_4326.png)
+
 赤道と本初子午線の交点を中心とし，座標の単位は角度で表す．
 
 ![4326.png](4326.png)
