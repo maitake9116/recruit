@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>GIS用語集</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -385,18 +385,48 @@ blockquote {
 <link rel="stylesheet" href="file:///d%3A/Common/Markdown/markdown.css" type="text/css">
 </head>
 <body>
-<h1 id="%E7%94%A8%E8%AA%9E%E8%A7%A3%E8%AA%AC">用語解説</h1>
+<h1 id="gis%E7%94%A8%E8%AA%9E%E8%A7%A3%E8%AA%AC">GIS用語解説</h1>
+<!-- TOC -->
+<ul>
+<li><a href="#gis%E7%94%A8%E8%AA%9E%E8%A7%A3%E8%AA%AC">GIS用語解説</a>
+<ul>
+<li><a href="#qgis">QGIS</a></li>
+<li><a href="#osm">OSM</a></li>
+<li><a href="#%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%97%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">シェープファイル</a></li>
+<li><a href="#%E3%83%99%E3%83%BC%E3%82%B9%E3%83%9E%E3%83%83%E3%83%97">ベースマップ</a></li>
+<li><a href="#%E7%A9%BA%E9%96%93%E5%8F%82%E7%85%A7%E7%B3%BB">空間参照系</a>
+<ul>
+<li><a href="#%E6%8A%95%E5%BD%B1%E5%BA%A7%E6%A8%99%E7%B3%BB">投影座標系</a>
+<ul>
+<li><a href="#web%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%88%E3%83%AB">Webメルカトル</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9C%B0%E7%90%86%E5%BA%A7%E6%A8%99%E7%B3%BB">地理座標系</a></li>
+<li><a href="#epsg">EPSG</a></li>
+</ul>
+</li>
+<li><a href="#%E3%83%95%E3%82%A3%E3%83%BC%E3%83%81%E3%83%A3">フィーチャ</a></li>
+<li><a href="#wktwell-known-text">WKT(Well-known text)</a>
+<ul>
+<li><a href="#wkt%E3%81%AE%E5%AE%9F%E7%94%A8%E4%BE%8B">WKTの実用例</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
 <h2 id="qgis">QGIS</h2>
-<p>https://www.qgis.org/ja/site/</p>
+<p><a href="https://www.qgis.org/ja/site/">https://www.qgis.org/ja/site/</a></p>
 <p>シェープファイルを閲覧，加工できるGISフリーソフト．</p>
 <h2 id="osm">OSM</h2>
-<p>https://www.openstreetmap.org/<br>
-https://wiki.openstreetmap.org/wiki/Main_Page</p>
+<p><a href="https://www.openstreetmap.org/">https://www.openstreetmap.org/</a><br>
+<a href="https://wiki.openstreetmap.org/wiki/Main_Page">https://wiki.openstreetmap.org/wiki/Main_Page</a></p>
 <p>OSM(OpenStreetMap)は地理情報をフリーで利用出来るように立ち上げられたプロジェクトである．<br>
 OSMから地図やシェープファイルがフリーで提供されている．</p>
 <h2 id="%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%97%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">シェープファイル</h2>
-<p>https://www.esrij.com/gis-guide/esri-dataformat/shapefile/<br>
-https://www.esrij.com/cgi-bin/wp/wp-content/uploads/documents/shapefile_j.pdf</p>
+<p><a href="https://www.esrij.com/gis-guide/esri-dataformat/shapefile/">https://www.esrij.com/gis-guide/esri-dataformat/shapefile/</a><br>
+<a href="https://www.esrij.com/cgi-bin/wp/wp-content/uploads/documents/shapefile_j.pdf">https://www.esrij.com/cgi-bin/wp/wp-content/uploads/documents/shapefile_j.pdf</a></p>
 <p>図形情報や属性情報がまとまったファイルを指す．<br>
 ESRI社が提唱したフォーマットでGISで標準となっている．<br>
 シェープファイルには少なくとも下記ファイルが含まれる．</p>
@@ -436,54 +466,51 @@ ESRIから無償のベースマップが公開されている．</p>
 <tbody>
 <tr>
 <td>白地図</td>
-<td>https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer</td>
+<td><a href="https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer">https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer</a></td>
 </tr>
 <tr>
 <td>衛星画像</td>
-<td>https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer</td>
+<td><a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer">https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer</a></td>
 </tr>
 <tr>
 <td>道路地図</td>
-<td>https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer</td>
+<td><a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer">https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer</a></td>
 </tr>
 <tr>
 <td>起伏図</td>
-<td>https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer</td>
+<td><a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer">https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer</a></td>
 </tr>
 <tr>
 <td>地形図</td>
-<td>https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer</td>
+<td><a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer">https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer</a></td>
 </tr>
 </tbody>
 </table>
 <p>ベースマップにレイヤを重ねることで任意の情報と地理情報を組み合わせて分析することができる．</p>
 <h2 id="%E7%A9%BA%E9%96%93%E5%8F%82%E7%85%A7%E7%B3%BB">空間参照系</h2>
-<p>https://docs.qgis.org/2.14/ja/docs/gentle_gis_introduction/coordinate_reference_systems.html</p>
 <p>CRS(Coordinate Reference System)ともいう．<br>
 地球の実際の場所を二次元でどのように表現するかを決定する．<br>
 主に投影座標系と地理座標系に分類される．</p>
 <h3 id="%E6%8A%95%E5%BD%B1%E5%BA%A7%E6%A8%99%E7%B3%BB">投影座標系</h3>
-<p>https://www.esrij.com/gis-guide/coordinate-and-spatial/coordinate-system/</p>
 <p>3次元の地球を2次元の平面に投影してXY座標で表現する座標系を投影座標系という．<br>
 地図アプリのデファクトスタンダードとして使用されている投影座標系はWebメルカトルである．</p>
 <h4 id="web%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%88%E3%83%AB">Webメルカトル</h4>
 <p>Webメルカトルは昔EPSG:900913が使われていたが現在はEPSG:3857を使う．<br>
 Webメルカトルでは地球に円筒をかぶせて，2次元の平面に投影する．</p>
-<p><img src="mercator.png" alt="mercator.png"></p>
+<p><img src="3857_2d_3d.png" alt="3857_2d_3d.png"></p>
 <p>経線はそれぞれ等間隔，平行となる．<br>
 緯線は平行だが，経度が赤道から離れるほど間隔が大きくなる．</p>
 <p><img src="3857_grid.png" alt="3857_grid.png"></p>
 <p>赤道と本初子午線の交点を中心とし，中心から何m離れているかを座標で表現する．</p>
-<p><img src="webmercator_point.png" alt="webmercator_point.png"></p>
+<p><img src="3857_map_center_and_jpn.png" alt="3857_map_center_and_jpn.png"></p>
 <h3 id="%E5%9C%B0%E7%90%86%E5%BA%A7%E6%A8%99%E7%B3%BB">地理座標系</h3>
-<p>https://www.ibm.com/support/knowledgecenter/ja/SS6NHC/com.ibm.db2.luw.spatial.topics.doc/doc/csb3022a.html</p>
 <p>EPSGコードは4326．<br>
 緯度，経度，高度を用いて表現する．</p>
-<p><img src="_4326.png" alt="_4326.png"></p>
+<p><img src="4326_3d_2d.png" alt="4326_3d_2d.png"></p>
 <p>赤道と本初子午線の交点を中心とし，座標の単位は角度で表す．</p>
-<p><img src="4326.png" alt="4326.png"></p>
+<p><img src="4326_map_center_and_jpn_with_meridian_parallel_and_label.png" alt="4326_map_center_and_jpn_with_meridian_parallel_and_label.png"></p>
 <h3 id="epsg">EPSG</h3>
-<p>http://www.epsg.org/</p>
+<p><a href="http://www.epsg.org/">http://www.epsg.org/</a></p>
 <p>EUROPEAN Petroleum Survey Group．<br>
 空間参照系や座標変換の定義をまとめている．</p>
 <h2 id="%E3%83%95%E3%82%A3%E3%83%BC%E3%83%81%E3%83%A3">フィーチャ</h2>
@@ -556,6 +583,12 @@ Webメルカトルでは地球に円筒をかぶせて，2次元の平面に投�
 </tr>
 </tbody>
 </table>
+<h3 id="%E5%8F%82%E8%80%83">参考</h3>
+<ul>
+<li><a href="https://docs.qgis.org/2.14/ja/docs/gentle_gis_introduction/coordinate_reference_systems.html">https://docs.qgis.org/2.14/ja/docs/gentle_gis_introduction/coordinate_reference_systems.html</a></li>
+<li><a href="https://www.ibm.com/support/knowledgecenter/ja/SS6NHC/com.ibm.db2.luw.spatial.topics.doc/doc/csb3022a.html">https://www.ibm.com/support/knowledgecenter/ja/SS6NHC/com.ibm.db2.luw.spatial.topics.doc/doc/csb3022a.html</a></li>
+<li><a href="https://www.esrij.com/gis-guide/coordinate-and-spatial/coordinate-system/">https://www.esrij.com/gis-guide/coordinate-and-spatial/coordinate-system/</a></li>
+</ul>
 
 </body>
 </html>
