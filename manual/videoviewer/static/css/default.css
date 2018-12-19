@@ -1,0 +1,242 @@
+@charset "Shift_JIS";
+/*
+
+#####################################
+1.	基本レイアウト
+2.	共通テーブルデザイン
+3.	フォントサイズ指定
+#####################################
+*/
+
+/*==============================================================
+	1.	基本レイアウト
+==============================================================*/
+html {
+	
+}
+
+body {
+	color: #333;
+	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+		"Meiryo", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	zoom: 1;
+	font-size: 13px;
+	*font-size: small;
+	*font: x-small;
+	background: #ffffff;
+}
+
+.red {
+	color: #f00;
+}
+
+#Pagewrap {
+	width: 700px;
+	margin: 0 auto;
+	padding: 0 0 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+header {
+	margin: 10px auto;
+	padding: 20px 0;
+	border-bottom: 3px solid #8f0425;
+	overflow: hidden;
+	zoom: 1;
+}
+
+div#header {
+	margin: 0 0 20px;
+}
+
+div#form_area {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#form_area dl {
+	background: url(../images/dt_bg.gif) repeat-y 0px 0 #fafafa;
+	border: 3px double #c6c4c5;
+	overflow: hidden;
+	zoom: 1;
+}
+
+div#form_area dl dt {
+	clear: left;
+	float: left;
+	width: 280px;
+	padding: 10px;
+	font-weight: bold;
+	border-top: 1px solid #c6c4c5;
+}
+
+div#form_area dl dt span.note {
+	padding-left: 0.5em;
+	display: inline-block;
+	color: #f00;
+}
+
+div#form_area dl dd {
+	float: left;
+	width: 70%;
+	padding: 10px; /
+	vertical-align: middle;
+	border-top: 1px solid #c6c4c5;
+}
+
+div#form_area>#err {
+	padding: 0 0 5px;
+	color: #f00;
+}
+
+div#form_area dl dd #err {
+	padding: 5px 0 0;
+	color: #f00;
+}
+
+div#form_area dl dd .message {
+	padding: 5px 0;
+}
+
+div#form_area dl dt.first, div#form_area dl dd.first {
+	border: none;
+}
+
+div#action {
+	margin: 20px 0;
+	text-align: center;
+}
+
+div#action form {
+	display: inline;
+}
+
+div#action input.submit {
+	display: block;
+	width: 300px;
+	margin: 0 auto 15px;
+	padding: 8px 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: none;
+	background: -moz-linear-gradient(top, #b10008 0%, #8e0316 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b10008),
+		to(#8e0316));
+	-pie-background: linear-gradient(#b10008, #8e0316);
+	color: #fff;
+	cursor: pointer;
+}
+
+table.list-table {
+	width: 90%;
+	table-layout: fixed;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.list-table-header {
+	padding: 8px 0px 8px 0px;
+	border-right: 1px solid #258;
+	border-left: 1px solid #258;
+	border-top: 1px solid #258;
+	border-bottom: 1px solid #258;
+	line-height: 120%;
+	text-align: center;
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+}
+
+.list-table-data {
+	padding: 8px 0px 8px 0px;
+	border-right: 1px solid #258;
+	border-left: 1px solid #258;
+	border-bottom: 1px solid #258;
+	border-top: 1px solid #258;
+}
+
+.list-table-data-right-none {
+	padding: 8px 0px 8px 0px;
+	border-left: 1px solid #258;
+	border-bottom: 1px solid #258;
+	border-top: 1px solid #258;
+}
+
+.list-table-data-left-none {
+	padding: 8px 0px 8px 0px;
+	border-right: 1px solid #258;
+	border-bottom: 1px solid #258;
+	border-top: 1px solid #258;
+}
+
+.text-align-center {
+	word-wrap: break-word;
+	word-break: break-all;
+	text-align: center;
+	padding: 4px;
+}
+
+.text-align-left {
+	word-wrap: break-word;
+	word-break: break-all;
+	text-align: left;
+	padding: 4px;
+}
+
+.text-align-right {
+	word-wrap: break-word;
+	word-break: break-all;
+	text-align: right;
+	padding: 4px;
+}
+
+.tablesorter-headerUnSorted {
+	padding: 8px 0px 8px 0px;
+	border-right: 1px solid #258;
+	border-left: 1px solid #258;
+	border-top: 1px solid #258;
+	border-bottom: 1px solid #258;
+	line-height: 120%;
+	text-align: center;
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+	background: #84b2e0;
+	background-repeat: no-repeat;
+	background-position: right
+}
+
+table.form-table{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 13px;
+	border: 3px double #c6c4c5;
+	border-collapse:collapse;
+}
+
+table.form-table th{
+	width: 280px;
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid #c6c4c5;
+	border-right: 1px solid #c6c4c5;
+	background-color: #EEEEEE;
+}
+
+table.form-table th span.note {
+	padding-left: 0.5em;
+	display: inline-block;
+	color: #f00;
+}
+
+table.form-table td{
+	padding: 10px;
+	border-bottom: 1px solid #c6c4c5;
+	background-color: #fafafa;
+}
+
+table.form-table td .message{
+	padding: 5px 0;
+}

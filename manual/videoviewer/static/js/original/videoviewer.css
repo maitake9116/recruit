@@ -1,0 +1,14 @@
+/* video.jsの高さ, 幅の調整が必要． */
+.video-js{
+    position: relative !important;
+    width: 80% !important;
+    height: 70% !important;
+}
+
+/* video.jsの再生ボタンの位置, サイズ */
+.vjs-default-skin .vjs-big-play-button {
+    left: calc(50% - 50px);
+    top: calc(50% - 25px);
+    width: 100px;
+    height: 50px;
+}

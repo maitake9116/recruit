@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Viewer</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/default.css">
+    <!-- video.js -->
+    <script src="../static/js/video.js/video.min.js"></script>
+    <script src="../static/js/video.js/lang/ja.js"></script>
+    <link href="../static/js/video.js/video-js.min.css" rel="stylesheet">
+    <!-- videojs-seek-buttons -->
+    <script src="../static/js/videojs-seek-buttons/videojs-seek-buttons.min.js"></script>
+    <script src="../static/js/videojs-seek-buttons/lang/ja.js"></script>
+    <link href="../static/js/videojs-seek-buttons/videojs-seek-buttons.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="../static/js/jquery/jquery.min.js"></script>
+    <!-- original -->
+    <script src="../static/js/original/videoviewer.js"></script>
+    <link href="../static/js/original/videoviewer.css" rel="stylesheet">
+</head>
+<body>
+    <div id="Pagewrap">
+        <div id="header">
+            <h1>Viewer</h1>
+        </div>
+    </div>
+    <div id="form_area">
+        <video style="margin: auto;" id="my-video" class="video-js vjs-default-skin vjs-big-play-button" controls preload="auto" data-setup='{"language":"ja"}'>
+            <source src="../static/video/sample.mp4">
+        </video>
+    </div>
+</body>
+</html>
